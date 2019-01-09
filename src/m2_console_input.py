@@ -3,8 +3,8 @@ This module demonstrates lets you practice INPUT from the CONSOLE.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Hannah Meisner.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -30,8 +30,10 @@ def double_a_float():
          Enter a number: -3.14
          -6.28
     """
+    number = float(input('Enter a floating point number:'))
+    print(number * 2)
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
 
@@ -61,8 +63,13 @@ def print_an_integer_many_times():
          10
          10
     """
+    number = int(input('Enter positive integer:'))
+    i = 1
+    while i <= number:
+        print(number * 2)
+        i = i + 1
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
 
@@ -80,8 +87,11 @@ def print_an_integer_many_times_on_one_row():
          Enter an integer: 5
          1010101010
     """
+    number = int(input('Enter positive integer:'))
+    print(str(number * 2) * number)
+
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #   The testing code is already written for you (above).
     #
     # HINT: One way to print on a SINGLE line is to build up a string
@@ -120,8 +130,21 @@ def input_it_all():
          Peace & Love.
          Peace & Love.
     """
+    Float = float(input('Input a positive float: '))
+    Integer = int(input('Input a positive integer: '))
+    String = input('Input a string: ')
+
+    i = 1
+    while i <= Integer:
+        print(Float ** 0.5)
+        i = i + 1
+
+    i = 1
+    while i <= Integer:
+        print(String)
+        i = i + 1
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
 
